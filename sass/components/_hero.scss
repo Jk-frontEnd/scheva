@@ -1,0 +1,27 @@
+.hero {
+    padding: 0;
+    margin: 0;
+    margin-top: 60px;
+    font-family: var(--font);
+
+    &__title {
+        font-size: 40px;
+        margin-bottom: 12px;
+    }
+
+    &__poem {
+        font-size: 24px;
+        padding-top: 12px;
+        border-top: 1px solid var(--text-main);
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        gap: 84px;
+    }
+
+    &__textbox {
+        padding: 0;
+    }
+}

@@ -1,0 +1,24 @@
+.header {
+    display: flex;
+    justify-content: center;
+    font-family: var(--font);
+    padding: 20px 0;
+
+    &__link:hover,
+    &__link:focus {
+        color: var(--hover);
+        transition: 350ms color ease-in-out;
+    }
+}
+
+header {
+    border-bottom: 1px solid var(--text-main);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    font-size: 20px;
+}
+
