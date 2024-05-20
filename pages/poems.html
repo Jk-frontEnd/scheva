@@ -26,19 +26,21 @@
       </div>
     </header>
     <main>
-      <section class="hero">
-        <div class="container"></div>
-      </section>
-      <section class="bio">
-        <div class="container"></div>
-      </section>
       <section class="poems">
-        <div class="container"></div>
-      </section>
-      <section class="gallery">
-        <div class="container"></div>
+        <div class="container">
+          <ul class="poems__list"></ul>
+          <div id="modal" class="modal">
+            <div class="modal-content">
+              <span class="closeBtn">&times;</span>
+              <h2 class="poem-title"></h2>
+              <p class="poem-text"></p>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
     <footer></footer>
+    <script src="../js/fetchPoems.js"></script>
+    <script src="../js/modal.js"></script>
   </body>
 </html>
