@@ -3,12 +3,6 @@
     justify-content: center;
     font-family: var(--font);
     padding: 20px 0;
-
-    &__link:hover,
-    &__link:focus {
-        color: var(--hover);
-        transition: 350ms color ease-in-out;
-    }
 }
 
 header {

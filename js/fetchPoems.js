@@ -24,29 +24,22 @@ poemBtns.forEach((btn) =>{
   });
 });
 
-// Add a click event listener to each button
 poemBtns.forEach((btn) => {
   btn.addEventListener("click", () => {
-    // Get the poem data from the button's data attributes
     const poemId = btn.getAttribute("data-poem-id");
     const poemTitle = btn.getAttribute("data-poem-title");
 
-    // Get the poem data from the JSON file
     fetch("../db/poems-db.json")
       .then((response) => response.json())
       .then((data) => {
-        // Find the poem with the matching id
         const poem = data.find((p) => p.id === parseInt(poemId));
 
-        // If the poem is found, show the modal
         if (poem) {
-          // Set the modal content
           modal.querySelector(".modal-content .poem-title").textContent =
             poemTitle;
           modal.querySelector(".modal-content .poem-text").textContent =
             poem.text;
 
-          // Show the modal
           modal.style.display = "block";
         }
       });

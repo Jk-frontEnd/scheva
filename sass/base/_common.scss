@@ -4,3 +4,13 @@ body {
     font-family: var(--font);
     font-size: 20px;
 }
+
+.current {
+    color: var(--hover);
+}
+
+.link:hover,
+.link:focus {
+    color: var(--hover);
+    transition: 350ms color ease-in-out;
+}
